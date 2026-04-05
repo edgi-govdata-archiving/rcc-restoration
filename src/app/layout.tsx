@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
+
+import { Mona_Sans } from "next/font/google";
+
+const monaSans = Mona_Sans({
+  subsets: ['latin'],
+  variable: '--font-mona-sans'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,10 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-    >
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${monaSans.variable} font-sans`}>{children}</body>
     </html>
   );
 }

@@ -9,6 +9,7 @@
 - Interactive Mapbox map with RCC region polygons and drill-down
 - Stakeholder self-reporting form integration
 - Publicly accessible on EDGI subdomain
+- Update styling guide when final EDGI design documentation is received
 
 ## V2 — Pipeline + Sustainability
 
