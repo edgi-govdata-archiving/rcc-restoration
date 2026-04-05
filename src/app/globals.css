@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-mona-sans), sans-serif;
+  
+  --color-edgi-paper: #F9F7F4;
+  --color-edgi-paper-dark: #EEEBE6;
+  --color-edgi-ink: #092439;
+  --color-edgi-green: #44BFAF;
+  --color-edgi-teal: #80E9DB;
+  --color-edgi-red: #F69A8D;
+  --color-edgi-gray: #747270;
+  --color-edgi-blue: #19649F;
+}

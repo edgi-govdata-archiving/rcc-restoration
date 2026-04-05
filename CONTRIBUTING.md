@@ -1,21 +1,15 @@
 # Contributing
 
-This project is part of EDGI's RCC Restoration initiative. Contributions are welcome.
+This project is part of EDGI's Local Climate Restoration initiative and follows EDGI's organization-wide contributing guidelines.
 
-Please review EDGI's [Code of Conduct](CONDUCT.md) before contributing.
+Please review [EDGI's Contributing Guidelines](https://github.com/edgi-govdata-archiving/overview/blob/main/CONTRIBUTING.md) and [Code of Conduct](CONDUCT.md) before contributing.
 
-## Getting Started
-
-1. Fork the repo and create a branch from `main`
-2. Follow setup instructions in README.md
-3. Open a pull request with a clear description of the change
-
-## Conventions
+## Project-Specific Conventions
 
 - ADRs go in `docs/adr/` numbered sequentially
-- Controlled vocabulary for tool data is defined in `docs/schema.md` — do not introduce new values without updating that doc
 - Branch naming: `feature/`, `fix/`, `docs/`
+- Data updates: export CSVs to `data/raw/`, run `pipeline/normalize.js`, commit `data/processed/`
 
 ## Questions
 
-Contact: restore.local.climate@envirodatagov.org
+Contact: <restore.local.climate@envirodatagov.org>
