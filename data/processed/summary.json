@@ -1,0 +1,74 @@
+{
+  "NRCC": {
+    "rcc": "NRCC",
+    "total": 45,
+    "active": 23,
+    "partiallyBroken": 0,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 22,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  },
+  "MRCC": {
+    "rcc": "MRCC",
+    "total": 35,
+    "active": 31,
+    "partiallyBroken": 1,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 3,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  },
+  "HPRCC": {
+    "rcc": "HPRCC",
+    "total": 33,
+    "active": 28,
+    "partiallyBroken": 0,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 5,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  },
+  "SRCC": {
+    "rcc": "SRCC",
+    "total": 26,
+    "active": 18,
+    "partiallyBroken": 1,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 7,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  },
+  "SERCC": {
+    "rcc": "SERCC",
+    "total": 24,
+    "active": 19,
+    "partiallyBroken": 0,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 5,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  },
+  "WRCC": {
+    "rcc": "WRCC",
+    "total": 36,
+    "active": 30,
+    "partiallyBroken": 0,
+    "fullyBroken": 0,
+    "offline": 0,
+    "archived": 6,
+    "acisDependent": 0,
+    "highPriority": 0,
+    "noSubstitute": 0
+  }
+}
