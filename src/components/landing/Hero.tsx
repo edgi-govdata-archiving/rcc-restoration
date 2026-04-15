@@ -4,16 +4,19 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="bg-edgi-ink min-h-[90vh] flex items-end pb-24 px-6">
-      <div className="max-w-4xl">
-        <p className="text-edgi-teal text-sm font-medium tracking-widest uppercase mb-8">
-          Environmental Data & Governance Initiative
-        </p>
+    <section className="bg-edgi-ink min-h-[74vh] flex items-end pb-22 px-6">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-edgi-paper text-5xl md:text-7xl font-bold leading-tight mb-8">
           150 years of regional climate knowledge. Quietly disappearing.
         </h1>
-        <p className="text-edgi-gray text-xl leading-relaxed mb-12 max-w-2xl">
-          NOAA's six Regional Climate Centers host nearly 200 tools that farmers, emergency managers, water planners, and researchers depend on daily. Federal funding cuts are putting them at risk — and most people don't know they exist.
+        <p className="text-edgi-paper/70 text-xl leading-relaxed mb-12 max-w-2xl">
+          National Oceanic and Atmospheric Administration's (NOAA){" "}
+          <a href="/centers" className="text-edgi-teal hover:underline">
+            six Regional Climate Centers
+          </a>{" "}
+          host nearly 200 tools that farmers, emergency managers, water
+          planners, and researchers depend on daily. Federal funding cuts are
+          putting them at risk.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
@@ -32,6 +35,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
+      {/* RIGHT SIDE VISUAL PLACEHOLDER — see Copy Doc Landing 1.1 Hero — Right Side Visual for options */}
     </section>
-  )
+  );
 }

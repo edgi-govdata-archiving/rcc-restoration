@@ -1,3 +1,5 @@
+// src/app/layout.tsx
+
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -23,7 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Nav />
       <body className={`${monaSans.variable} font-sans`}>
         <Nav />
         <div className="pt-16">{children}</div>
