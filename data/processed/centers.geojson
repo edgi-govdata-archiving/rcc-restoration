@@ -11,9 +11,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 22,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 40,
+        "highPriority": 14,
+        "noSubstitute": 13
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38219,9 +38219,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 3,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 30,
+        "highPriority": 16,
+        "noSubstitute": 10
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -90355,9 +90355,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 5,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 21,
+        "highPriority": 14,
+        "noSubstitute": 9
       },
       "geometry": {
         "type": "Polygon",
@@ -105841,9 +105841,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 7,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 14,
+        "highPriority": 7,
+        "noSubstitute": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -127749,9 +127749,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 5,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 20,
+        "highPriority": 8,
+        "noSubstitute": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -154133,9 +154133,9 @@
         "fullyBroken": 0,
         "offline": 0,
         "archived": 6,
-        "acisDependent": 0,
-        "highPriority": 0,
-        "noSubstitute": 0
+        "acisDependent": 23,
+        "highPriority": 17,
+        "noSubstitute": 10
       },
       "geometry": {
         "type": "MultiPolygon",

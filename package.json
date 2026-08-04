@@ -11,23 +11,23 @@
     "build-geojson": "node pipeline/build-geojson.js"
   },
   "dependencies": {
-    "lucide-react": "^1.8.0",
-    "next": "16.2.2",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@turf/turf": "^7.3.4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@turf/turf": "^7.4.0",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "babel-plugin-react-compiler": "1.0.0",
-    "csv-parse": "^6.2.1",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.2",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "csv-parse": "^7.0.2",
+    "eslint": "^10.8.0",
+    "eslint-config-next": "^16.3.0",
+    "lucide-react": "^1.28.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
   },
   "type": "module"
 }

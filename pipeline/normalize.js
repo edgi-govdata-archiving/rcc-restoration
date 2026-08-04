@@ -16,10 +16,10 @@ const VOCAB = {
     "Offline",
     "Archived",
   ],
-  "Restoration Feasibility": ["High", "Medium", "Low"],
-  Priority: ["High", "Medium", "Low"],
-  "ACIS Dependent": ["Y", "N"],
-  "Substitute Exists": ["Y", "N", "Partial"],
+  "Restoration Feasibility (L / M / H)": ["High", "Medium", "Low"],
+  "ACIS Dependent (Y / N)": ["Y", "N"],
+  "Priority (H / M / L)": ["High", "Medium", "Low"],
+  "Substitute Exists (Y / N / Partial) ": ["Y", "N", "Partial"],
 };
 
 const CENTERS = ["nrcc", "mrcc", "hprcc", "srcc", "sercc", "wrcc"];
@@ -48,10 +48,10 @@ function normalizeRow(row, center) {
     accessibilityStatus: row["Accessibility Status"]?.trim(),
     archiveLink: row["Archive Link"]?.trim(),
     userSegment: row["User Segment"]?.trim(),
-    restorationFeasibility: row["Restoration Feasibility"]?.trim(),
-    acisDependent: row["ACIS Dependent"]?.trim(),
-    priority: row["Priority"]?.trim(),
-    substituteExists: row["Substitute Exists"]?.trim(),
+    restorationFeasibility: row["Restoration Feasibility (L / M / H)"]?.trim(),
+    acisDependent: row["ACIS Dependent (Y / N)"]?.trim(),
+    priority: row["Priority (H / M / L)"]?.trim(),
+    substituteExists: row["Substitute Exists (Y / N / Partial) "]?.trim(),
     lastChecked: row["Last Checked"]?.trim(),
     impactEvidence: row["Impact Evidence"]?.trim(),
     notes: row["Notes"]?.trim(),
@@ -98,7 +98,14 @@ const allTools = [];
 for (const center of CENTERS) {
   const filePath = join(RAW_DIR, `${center}.csv`);
   const content = readFileSync(filePath, "utf-8");
-  const rows = parse(content, { columns: true, skip_empty_lines: true });
+  const normalizedContent = content.replace(
+    /("Priority\s*\n\s*\(H \/ M \/ L\)")/g,
+    '"Priority (H / M / L)"',
+  );
+  const rows = parse(normalizedContent, {
+    columns: true,
+    skip_empty_lines: true,
+  });
 
   rows.forEach((row, index) => {
     validateRow(row, center, index);
