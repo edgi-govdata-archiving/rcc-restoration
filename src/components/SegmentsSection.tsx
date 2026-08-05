@@ -1,6 +1,4 @@
-// src/components/StakesSection.tsx
-
-import { Icon } from "lucide-react";
+// src/components/SegmentsSection.tsx
 
 import {
   Sprout,
@@ -13,20 +11,8 @@ import {
   Scale,
   Mountain,
   GraduationCap,
+  Grape,
 } from "lucide-react";
-
-const iconMap = {
-  Sprout,
-  Siren,
-  Waves,
-  Zap,
-  HeartPulse,
-  TreePine,
-  Landmark,
-  Scale,
-  Mountain,
-  GraduationCap,
-};
 
 const segments = [
   {
@@ -99,9 +85,16 @@ const segments = [
     href: "/tools?segment=research-education",
     icon: GraduationCap,
   },
+  {
+    label: "Wine & Viticulture",
+    description:
+      "Vineyard managers and viticulture consultants use fine-scale temperature and precipitation records for variety selection, frost risk, and harvest timing.",
+    href: "/tools?segment=wine-viticulture",
+    icon: Grape,
+  },
 ];
 
-export default function StakesSection() {
+export default function SegmentsSection() {
   return (
     <section className="bg-edgi-paper py-16 px-6">
       <div className="max-w-7xl mx-auto">

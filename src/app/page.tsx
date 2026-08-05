@@ -1,13 +1,15 @@
 // src/app/page.tsx
 
 import Hero from "@/components/landing/Hero";
-import StakesSection from "@/components/StakesSection";
+import SegmentsSection from "@/components/SegmentsSection";
+import AuditDataSection from "@/components/AuditDataSection";
 
 export default function Home() {
   return (
     <main className="">
       <Hero />
-      <StakesSection />
+      <SegmentsSection />
+      <AuditDataSection />
     </main>
   );
 }
