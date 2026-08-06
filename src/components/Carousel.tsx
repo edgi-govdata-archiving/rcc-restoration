@@ -13,10 +13,12 @@ interface Quote {
 }
 
 export default function Carousel({ testimonies }: { testimonies: Quote[] }) {
-  const [currentIndex, setCurrentIndex] = useState(() =>
-    Math.floor(Math.random() * testimonies.length),
-  );
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    setCurrentIndex(Math.floor(Math.random() * testimonies.length))
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -33,9 +35,9 @@ export default function Carousel({ testimonies }: { testimonies: Quote[] }) {
   const current = testimonies[currentIndex];
 
   return (
-    <div>
+    <div className="relative min-h-52 md:min-h-40 max-w-3xl mx-auto">
       <div
-        className="transition-opacity duration-400 max-w-3xl mx-auto text-center"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         style={{ opacity: isVisible ? 1 : 0 }}
       >
         <p className="text-edgi-ink text-lg leading-relaxed mb-2">
@@ -48,7 +50,8 @@ export default function Carousel({ testimonies }: { testimonies: Quote[] }) {
           className="group inline-block"
         >
           <p className="text-edgi-ink font-semibold group-hover:text-edgi-green transition-colors">
-            - {current.name}{": "}
+            - {current.name}
+            {": "}
             <span style={{ color: "#747270", fontWeight: 400 }}>
               {current.title}
             </span>
