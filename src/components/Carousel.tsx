@@ -1,0 +1,63 @@
+// src/components/Carousel.tsx
+"use client";
+
+import { useState, useEffect } from "react";
+
+interface Quote {
+  quote: string;
+  name: string;
+  title: string;
+  publication: string;
+  date: string;
+  url: string;
+}
+
+export default function Carousel({ testimonies }: { testimonies: Quote[] }) {
+  const [currentIndex, setCurrentIndex] = useState(() =>
+    Math.floor(Math.random() * testimonies.length),
+  );
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % testimonies.length);
+        setIsVisible(true);
+      }, 500);
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, [testimonies.length]);
+
+  const current = testimonies[currentIndex];
+
+  return (
+    <div>
+      <div
+        className="transition-opacity duration-400 max-w-3xl mx-auto text-center"
+        style={{ opacity: isVisible ? 1 : 0 }}
+      >
+        <p className="text-edgi-ink text-lg leading-relaxed mb-2">
+          "{current.quote}"
+        </p>
+        <a
+          href={current.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-block"
+        >
+          <p className="text-edgi-ink font-semibold group-hover:text-edgi-green transition-colors">
+            - {current.name}{": "}
+            <span style={{ color: "#747270", fontWeight: 400 }}>
+              {current.title}
+            </span>
+          </p>
+          <p className="text-edgi-gray text-sm">
+            {current.publication} · {current.date}
+          </p>
+        </a>
+      </div>
+    </div>
+  );
+}
