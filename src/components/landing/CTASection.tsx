@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function CTASection() {
   return (
-    <section className="bg-edgi-paper py-10 px-6">
+    <section className="bg-edgi-paper py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8">
         <Link
           href="/tools"

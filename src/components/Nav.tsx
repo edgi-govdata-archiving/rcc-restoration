@@ -29,7 +29,7 @@ export default function Nav() {
             href="/tools"
             className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
           >
-            Explore
+            Tools
           </Link>
           <Link
             href="/centers"
