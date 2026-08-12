@@ -1,14 +1,20 @@
 // src/components/Nav.tsx
 
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 import mainHorizontalLogo from "../../public/edgi-logo.svg";
 
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-edgi-paper border-b border-edgi-paperDark">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
         {/* Left — EDGI logo */}
         <a
           href="https://envirodatagov.org"
@@ -20,11 +26,12 @@ export default function Nav() {
             src={mainHorizontalLogo}
             alt="Enviromental Data & Governance Initiative"
             width={200}
+            className="w-40 md:w-48"
           ></Image>
         </a>
 
-        {/* Right — nav links */}
-        <div className="flex items-center gap-8">
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-8">
           <Link
             href="/tools"
             className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
@@ -52,6 +59,53 @@ export default function Nav() {
             Report a Tool ↗
           </a>
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden text-edgi-ink text-xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? (
+            <X className="w-5 h-5 transition-transform duration-200" />
+          ) : (
+            <Menu className="w-5 h-5 transition-transform duration-200" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden bg-edgi-paper border-b border-edgi-paperDark flex flex-col items-end px-6 overflow-hidden transition-all duration-200 ${menuOpen ? "max-h-96 pb-4 gap-4" : "max-h-0 pb-0 gap-0"}`}
+      >
+        <Link
+          href="/tools"
+          className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
+          onClick={() => setMenuOpen(false)}
+        >
+          Tools
+        </Link>
+        <Link
+          href="/centers"
+          className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
+          onClick={() => setMenuOpen(false)}
+        >
+          Regions
+        </Link>
+        <Link
+          href="/about"
+          className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
+          onClick={() => setMenuOpen(false)}
+        >
+          About
+        </Link>
+        <a
+          href="https://forms.gle/LwjQZ7YwL6MshKV68"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-edgi-green text-sm font-medium hover:text-edgi-teal transition-colors"
+        >
+          Report a Tool ↗
+        </a>
       </div>
     </nav>
   );
