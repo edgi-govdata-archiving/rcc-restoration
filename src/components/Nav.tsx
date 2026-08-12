@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-edgi-paper border-b border-edgi-paperDark">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+      <div className="w-full px-6 h-20 flex items-center justify-between relative">
         {/* Left — EDGI logo */}
         <a
           href="https://envirodatagov.org"
@@ -75,7 +75,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden bg-edgi-paper border-b border-edgi-paperDark flex flex-col items-end px-6 overflow-hidden transition-all duration-200 ${menuOpen ? "max-h-96 pb-4 gap-4" : "max-h-0 pb-0 gap-0"}`}
+        className={`md:hidden bg-edgi-paper flex flex-col items-end px-6 overflow-hidden transition-all duration-200 ${menuOpen ? "max-h-96 pb-4 gap-4" : "max-h-0 pb-0 gap-0"}`}
       >
         <Link
           href="/tools"

@@ -31,11 +31,11 @@ const stats = [
 
 export default function AuditDataSection() {
   return (
-    <section className="bg-edgi-ink py-16 px-56">
+    <section className="bg-edgi-ink py-16 px-6 overflow-hidden">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
-            <p className="text-edgi-teal text-6xl font-bold mb-3">
+            <p className="text-edgi-teal text-4xl md:text-6x font-bold mb-3">
               {stat.number}
             </p>
             <p className="text-edgi-gray text-sm leading-relaxed">
