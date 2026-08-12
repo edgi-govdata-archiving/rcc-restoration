@@ -7,6 +7,7 @@ import "./globals.css";
 import { Mona_Sans } from "next/font/google";
 
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer"
 
 const monaSans = Mona_Sans({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${monaSans.variable} font-sans`}>
         <Nav />
         <div className="pt-16">{children}</div>
+        <Footer />
       </body>
     </html>
   );

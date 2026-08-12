@@ -17,6 +17,7 @@
 - Cloud Scheduler for automated pipeline runs and Vercel deploy webhooks
 - Firestore for user feedback persistence
 - Search by tool name or keyword
+- Visibility/Restoration section — case study previews of restored tools
 
 ## V3 — Advocacy Surface
 

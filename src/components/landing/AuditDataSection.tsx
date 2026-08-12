@@ -1,6 +1,6 @@
 // src/components/AuditDataSection.tsx
 
-import summary from "../../data/processed/summary.json";
+import summary from "../../../data/processed/summary.json";
 
 const totals = Object.values(summary).reduce(
   (acc, center) => ({
@@ -31,7 +31,7 @@ const stats = [
 
 export default function AuditDataSection() {
   return (
-    <div className="bg-edgi-ink py-16 px-56">
+    <section className="bg-edgi-ink py-16 px-56">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
@@ -44,6 +44,6 @@ export default function AuditDataSection() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
