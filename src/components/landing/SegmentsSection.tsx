@@ -96,13 +96,13 @@ const segments = [
 
 export default function SegmentsSection() {
   return (
-    <section className="bg-edgi-paper py-16 px-6">
+    <section className="bg-edgi-paper pt-12 sm:pt-0 pb-16 sm:pb-0 sm:py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold text-edgi-ink tracking-tight">
             Who depends on these tools
           </h2>
-          <p className="mt-3 text-edgi-inkMuted mx-auto max-w-2xl">
+          <p className="mt-4 sm:mt-3 text-edgi-inkMuted mx-auto max-w-2xl">
             Regional climate tools serve a wide cross-section of practitioners.
             When they go offline, the impact is immediate and often invisible.
           </p>

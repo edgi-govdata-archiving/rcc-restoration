@@ -17,7 +17,7 @@ export default function Nav() {
       <div className="w-full px-6 h-20 flex items-center justify-between relative">
         {/* Left — EDGI logo */}
         <a
-          href="https://envirodatagov.org"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center"
