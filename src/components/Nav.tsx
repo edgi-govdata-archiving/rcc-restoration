@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-edgi-paper border-b border-edgi-paperDark">
       <div className="w-full px-6 h-20 flex items-center justify-between relative">
-        {/* Left — EDGI logo */}
+        {/* left — EDGI logo */}
         <a
           href="/"
           target="_blank"
@@ -30,7 +30,7 @@ export default function Nav() {
           ></Image>
         </a>
 
-        {/* Desktop nav */}
+        {/* desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link
             href="/tools"
@@ -60,7 +60,7 @@ export default function Nav() {
           </a>
         </div>
 
-        {/* Mobile hamburger */}
+        {/* mobile hamburger */}
         <button
           className="md:hidden text-edgi-ink text-xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -73,7 +73,7 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* mobile menu */}
       <div
         className={`md:hidden bg-edgi-paper flex flex-col items-end px-6 overflow-hidden transition-all duration-200 ${menuOpen ? "max-h-96 pb-4 gap-4" : "max-h-0 pb-0 gap-0"}`}
       >
