@@ -35,7 +35,7 @@ export default function Carousel({ testimonies }: { testimonies: Quote[] }) {
   const current = testimonies[currentIndex];
 
   return (
-    <div className="relative min-h-72 sm:min-h-44 sm:max-w-xl md:max-w-3xl mx-auto">
+    <div className="relative min-h-72 sm:min-h-44 lg:min-h-34 sm:max-w-xl md:max-w-3xl mx-auto">
       <div
         className="absolute inset-0 flex flex-col items-center justify-center text-center transition-opacity duration-500"
         style={{ opacity: isVisible ? 1 : 0 }}

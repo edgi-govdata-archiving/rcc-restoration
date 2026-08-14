@@ -108,7 +108,7 @@ export default function SegmentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:max-w-xl md:max-w-2xl mx-auto transition-all duration-300">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:max-w-xl md:max-w-2xl lg:max-w-7xl mx-auto transition-all duration-300">
           {segments.map((segment) => (
             <a
               key={segment.label}
