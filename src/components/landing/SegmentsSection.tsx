@@ -96,19 +96,19 @@ const segments = [
 
 export default function SegmentsSection() {
   return (
-    <section className="bg-edgi-paper pt-12 sm:pt-10 pb-16 sm:pb-14 md:pb-0 sm:py-16 px-6 transition-all duration-300">
+    <section className="bg-edgi-paper pt-12 sm:pt-10 pb-16 sm:pb-14 md:pb-12 sm:py-16 px-6 transition-all duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold text-edgi-ink tracking-tight">
             Who depends on these tools
           </h2>
-          <p className="mt-4 sm:mt-3 text-edgi-inkMuted mx-auto sm:max-w-lg lg:max-w-2xl transition-all duration-300">
+          <p className="mt-4 sm:mt-3 text-edgi-inkMuted mx-auto sm:max-w-lg md:max-w-xl lg:max-w-2xl transition-all duration-300">
             Regional climate tools serve a wide cross-section of practitioners.
             When they go offline, the impact is immediate and often invisible.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:max-w-xl sm: mx-auto transition-all duration-300">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:max-w-xl md:max-w-2xl mx-auto transition-all duration-300">
           {segments.map((segment) => (
             <a
               key={segment.label}

@@ -16,7 +16,7 @@ export default function CTASection() {
           href="https://forms.gle/LwjQZ7YwL6MshKV68"
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-edgi-ink text-edgi-ink font-medium px-8 py-4 rounded-full text-sm hover:border-edgi-teal hover:text-edgi-teal transition-colors text-center w-full sm:w-auto"
+          className="border border-edgi-ink text-edgi-ink font-medium px-8 py-4 rounded-full text-sm hover:border-edgi-teal hover:text-edgi-paper hover:bg-edgi-green transition-colors text-center w-full sm:w-auto"
         >
           Report a Tool You Use ↗
         </a>

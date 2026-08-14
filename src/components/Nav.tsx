@@ -54,7 +54,7 @@ export default function Nav() {
             href="https://forms.gle/LwjQZ7YwL6MshKV68"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-edgi-green text-edgi-ink text-sm font-medium px-5 py-2 rounded-full hover:bg-edgi-teal transition-colors"
+            className=" text-edgi-green text-sm font-medium px-5 py-2 rounded-full border border-edgi-green hover:text-edgi-paper hover:bg-edgi-ink hover:border-edgi-ink transition-colors"
           >
             Report a Tool ↗
           </a>

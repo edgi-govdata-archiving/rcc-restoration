@@ -2,11 +2,9 @@
 
 import Link from "next/link";
 
-import rccMap from "../../public/rcc-map.svg";
-
 export default function Hero() {
   return (
-    <section className="bg-edgi-ink min-h-[74vh] flex items-end pb-14 md:pb-22 px-6 pt-10 lg:pt-0 transition-all duration-300">
+    <section className="bg-edgi-ink min-h-[74vh] flex items-end pb-14 md:pb-16 px-6 pt-10 lg:pt-0 transition-all duration-300">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 lg:items-center max-w-7xl mx-auto w-full transition-all duration-300">
         <div className="flex flex-col items-center lg:flex-row lg:items-start">
           <h1 className="text-edgi-paper text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-center lg:text-left max-w-lg md:max-w-xl lg:max-w-2xl mb-8 transition-all duration-300">
