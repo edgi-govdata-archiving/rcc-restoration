@@ -8,7 +8,7 @@ export default function CTASection() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8 w-60 sm:w-auto transition-all duration-300">
         <Link
           href="/tools"
-          className="bg-edgi-green text-edgi-ink font-medium px-8 py-4 rounded-full text-sm hover:bg-edgi-teal transition-colors text-center w-full sm:w-auto"
+          className="bg-edgi-green text-edgi-ink font-medium px-8 py-4 rounded-full text-sm border border-edgi-green hover:bg-edgi-ink hover:text-edgi-paper hover:border-edgi-ink transition-colors text-center w-full sm:w-auto"
         >
           Explore the Tools
         </Link>
@@ -16,7 +16,7 @@ export default function CTASection() {
           href="https://forms.gle/LwjQZ7YwL6MshKV68"
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-edgi-ink text-edgi-ink font-medium px-8 py-4 rounded-full text-sm hover:border-edgi-teal hover:text-edgi-paper hover:bg-edgi-green transition-colors text-center w-full sm:w-auto"
+          className="border border-edgi-ink text-edgi-ink font-medium px-8 py-4 rounded-full text-sm hover:bg-edgi-ink hover:text-edgi-paper hover:border-edgi-ink transition-colors text-center w-full sm:w-auto"
         >
           Report a Tool You Use ↗
         </a>

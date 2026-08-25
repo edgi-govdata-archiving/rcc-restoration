@@ -3,12 +3,36 @@
 @theme {
   --font-sans: var(--font-mona-sans), sans-serif;
   
+  /* Main palette */
   --color-edgi-paper: #F9F7F4;
   --color-edgi-paper-dark: #EEEBE6;
+  --color-edgi-paper-darker: #E2E0DC;
   --color-edgi-ink: #092439;
-  --color-edgi-green: #44BFAF;
-  --color-edgi-teal: #80E9DB;
-  --color-edgi-red: #F69A8D;
   --color-edgi-gray: #747270;
   --color-edgi-blue: #19649F;
+
+  /* Highlight colors */
+  --color-edgi-green: #80E9DB;
+  --color-edgi-green-data: #54CDBC;
+  --color-edgi-red: #E89086;
+
+  /* Data visualization — charts only, never in UI or layouts */
+  --color-edgi-chart-blue: #19649F;
+  --color-edgi-chart-blue-dark: #163955;
+  --color-edgi-chart-blue-light: #8AB7DA;
+  --color-edgi-chart-teal: #54CDBC;
+  --color-edgi-chart-teal-dark: #1F6E63;
+  --color-edgi-chart-teal-light: #B5E8DF;
+  --color-edgi-chart-terracotta: #B85A50;
+  --color-edgi-chart-terracotta-dark: #7A3530;
+  --color-edgi-chart-terracotta-light: #E8B39E;
+  --color-edgi-chart-mustard: #C99A3E;
+  --color-edgi-chart-mustard-dark: #6C511D;
+  --color-edgi-chart-mustard-light: #E8C784;
+  --color-edgi-chart-olive: #7A8450;
+  --color-edgi-chart-olive-dark: #4B532A;
+  --color-edgi-chart-olive-light: #C9D2A0;
+  --color-edgi-chart-plum: #7A5C7D;
+  --color-edgi-chart-plum-dark: #473049;
+  --color-edgi-chart-plum-light: #C6AEC8;
 }

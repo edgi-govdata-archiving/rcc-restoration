@@ -94,7 +94,7 @@ export default function SegmentsSection() {
           <h2 className="text-3xl font-bold text-edgi-ink tracking-tight">
             Who depends on these tools
           </h2>
-          <p className="mt-4 sm:mt-3 text-edgi-inkMuted mx-auto sm:max-w-lg md:max-w-xl lg:max-w-2xl transition-all duration-300">
+          <p className="mt-4 sm:mt-3 text-edgi-ink/70 mx-auto sm:max-w-lg md:max-w-xl lg:max-w-2xl transition-all duration-300">
             Regional climate tools serve a wide cross-section of practitioners.
             When they go offline, the impact is immediate and often invisible.
           </p>
@@ -105,13 +105,13 @@ export default function SegmentsSection() {
             <a
               key={segment.label}
               href={segment.href}
-              className="group block bg-white border border-edgi-paperDark rounded-lg p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:border-edgi-green"
+              className="group block bg-white border border-edgi-paperDark rounded-lg p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md "
             >
               <segment.icon className="w-5 h-5 text-edgi-ink group-hover:text-edgi-green transition-colors duration-200 mb-3" />
               <h3 className="text-edgi-ink font-semibold mb-2 group-hover:text-edgi-green transition-colors duration-200">
                 {segment.label}
               </h3>
-              <p className="text-edgi-inkMuted text-sm leading-relaxed">
+              <p className="text-edgi-ink/75 text-sm leading-relaxed">
                 {segment.description}
               </p>
             </a>
