@@ -9,7 +9,8 @@
     "lint": "eslint",
     "normalize": "node pipeline/normalize.js",
     "build-geojson": "node pipeline/build-geojson.js",
-    "generate-map": "node pipeline/generate-map-svg.js"
+    "generate-map": "node pipeline/generate-map-svg.js",
+    "test:pipeline": "node pipeline/normalize.test.js"
   },
   "dependencies": {
     "next": "^16.3.0",

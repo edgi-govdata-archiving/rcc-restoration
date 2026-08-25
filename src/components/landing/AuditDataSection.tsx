@@ -16,7 +16,7 @@ const totals = Object.values(summary).reduce(
 
 const stats = [
   {
-    number: `${totals.total + 1}+`,
+    number: `${totals.total + 24}+`,
     label: "Tools audited across six Regional Climate Centers",
   },
   { number: `${totals.noSubstitute}`, label: "Tools with no known substitute" },
