@@ -42,7 +42,7 @@ export default function Nav() {
             href="/centers"
             className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
           >
-            Regions
+            Centers
           </Link>
           <Link
             href="/about"
@@ -89,7 +89,7 @@ export default function Nav() {
           className="text-edgi-ink text-sm font-medium hover:text-edgi-green transition-colors"
           onClick={() => setMenuOpen(false)}
         >
-          Regions
+          Centers
         </Link>
         <Link
           href="/about"

@@ -4,14 +4,13 @@ import {
   Sprout,
   Siren,
   Waves,
-  Zap,
   HeartPulse,
-  TreePine,
   Landmark,
-  Scale,
-  Mountain,
   GraduationCap,
-  Grape,
+  Flame,
+  Truck,
+  Database,
+  Megaphone,
 } from "lucide-react";
 
 const segments = [
@@ -23,13 +22,6 @@ const segments = [
     icon: Sprout,
   },
   {
-    label: "Emergency Management",
-    description:
-      "Emergency coordinators use climate tools to anticipate flood risk, heat events, and severe weather windows for response planning.",
-    href: "/tools?segment=emergency-management",
-    icon: Siren,
-  },
-  {
     label: "Water Resources",
     description:
       "Water managers depend on precipitation records, snowpack data, and drought indices to manage supply and allocation.",
@@ -37,11 +29,18 @@ const segments = [
     icon: Waves,
   },
   {
-    label: "Energy & Utilities",
+    label: "Emergency Management",
     description:
-      "Utilities use temperature and demand tools to forecast load, plan infrastructure, and manage grid stress during extreme weather.",
-    href: "/tools?segment=energy-utilities",
-    icon: Zap,
+      "Emergency coordinators use climate tools to anticipate flood risk, heat events, and severe weather windows for response planning.",
+    href: "/tools?segment=emergency-management",
+    icon: Siren,
+  },
+  {
+    label: "Fire & Rangeland",
+    description:
+      "Fire managers and incident commanders rely on fire weather data, fuel moisture, and rangeland conditions to time burns and stage response.",
+    href: "/tools?segment=fire-rangeland",
+    icon: Flame,
   },
   {
     label: "Public Health",
@@ -51,13 +50,6 @@ const segments = [
     icon: HeartPulse,
   },
   {
-    label: "Conservation",
-    description:
-      "Land managers and wildlife agencies use climate tools to monitor habitat conditions, wildfire risk, and phenological shifts.",
-    href: "/tools?segment=conservation",
-    icon: TreePine,
-  },
-  {
     label: "Planning & Policy",
     description:
       "Urban planners and policymakers use climate normals and projections to inform zoning, infrastructure, and resilience investments.",
@@ -65,18 +57,11 @@ const segments = [
     icon: Landmark,
   },
   {
-    label: "Insurance & Legal",
+    label: "Transportation",
     description:
-      "Insurers and attorneys use certified climate records to assess risk, price policies, and resolve weather-related claims.",
-    href: "/tools?segment=insurance-legal",
-    icon: Scale,
-  },
-  {
-    label: "Recreation",
-    description:
-      "Ski areas, parks, and outdoor industries use seasonal forecasts and snowpack tools to plan operations and communicate conditions.",
-    href: "/tools?segment=recreation",
-    icon: Mountain,
+      "DOT engineers and road crews use precipitation and freeze data for maintenance scheduling and infrastructure design.",
+    href: "/tools?segment=transportation",
+    icon: Truck,
   },
   {
     label: "Research & Education",
@@ -86,11 +71,18 @@ const segments = [
     icon: GraduationCap,
   },
   {
-    label: "Wine & Viticulture",
+    label: "Data & Technical",
     description:
-      "Vineyard managers and viticulture consultants use fine-scale temperature and precipitation records for variety selection, frost risk, and harvest timing.",
-    href: "/tools?segment=wine-viticulture",
-    icon: Grape,
+      "Developers and data analysts build on ACIS web services directly, feeding regional climate data into downstream tools and research pipelines.",
+    href: "/tools?segment=data-technical",
+    icon: Database,
+  },
+  {
+    label: "Media & Communications",
+    description:
+      "Journalists and public information officers use climate summaries and historical records to report on drought, heat events, and extreme weather.",
+    href: "/tools?segment=media-communications",
+    icon: Megaphone,
   },
 ];
 
