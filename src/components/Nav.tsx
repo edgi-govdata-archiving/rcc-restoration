@@ -2,27 +2,46 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
-import mainHorizontalLogo from "../../public/edgi-logo.svg";
+import mainHorizontalLogo from "../../public/EDGI-Logo-Blue.svg";
+import mainIconLogo from "../../public/EDGI-Icon-Blue.png"
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [isLarge, setIsLarge] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsLarge(window.innerWidth >= 1024);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-edgi-paper border-b border-edgi-paperDark">
       <div className="w-full px-6 h-20 flex items-center justify-between relative">
         {/* left — EDGI logo */}
         <a href="/" className="flex items-center">
-          <Image
-            src={mainHorizontalLogo}
-            alt="Environmental Data & Governance Initiative"
-            width={200}
-            className="w-40 md:w-48"
-          ></Image>
+          {isLarge ? (
+            <Image
+              src={mainHorizontalLogo}
+              alt="Environmental Data & Governance Initiative"
+              width={200}
+              style={{ height: "auto" }}
+            />
+          ) : (
+            <Image
+              src={mainIconLogo}
+              alt="Environmental Data & Governance Initiative"
+              width={40}
+              style={{ height: "auto" }}
+            />
+          )}
         </a>
 
         {/* desktop nav */}
